@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
         Employe emp1 = new Employe("1", "Flouflou" , "Bob","Lavaltrie", "Technique");
-        Employe emp2 = new Employe("1", "Flouflou" , "Bob","Lavaltrie", "Ventes");
+        Employe emp2 = new Employe("1", "Flouflou" , "Bob","Lavaltrie", "Technique");
         Employe emp3 = new Employe("1", "Flouflou" , "Bob","Lavaltrie", "Technique");
-        Employe emp4 = new Employe("1", "Flouflou" , "Bob","Lavaltrie", "Construction");
+        Employe emp4 = new Employe("1", "Flouflou" , "Bob","Lavaltrie", "Technique");
 
         RegisteEmploye registeEmp = new RegisteEmploye();
 
@@ -21,7 +21,7 @@ public class Main {
 
 
         RegistreDept registreDept = new RegistreDept();
-        registreDept.ajouterRegistreEmp(registeEmp);
+        registreDept.ajouterRegistreEmp("Technique",registeEmp);
 
 
 
